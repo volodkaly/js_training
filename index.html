@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Задание 1</title>
+	<script>
+		function sum() {
+			var num1 = parseInt(document.getElementById("num1").value);
+			var num2 = parseInt(document.getElementById("num2").value);
+			var result = num1 + num2;
+			document.getElementById("output").innerHTML = result;
+		}
+	</script>
+</head>
+<body>
+	<style>
+		body{
+			margin-left: 5svh;
+			font-size: 3svh;
+			display: block;
+			width: 50svw; 
+			text-wrap: nowrap;
+		}
+		input {
+			height: 3svh;
+			width: 20svh;
+		}
+		button {
+			height: 3svh;
+			font-size: 2svh;
+		}
+	</style>
+	<label for="num1">Введите первое число:</label><br>
+	<input type="text" id="num1"><br>
+
+	<label for="num2">Введите второе число:</label><br>
+	<input type="text" id="num2"><br>
+
+	<button onclick="sum()">Посчитать</button><br>
+
+	<p>Результат: <span id="output"></span></p>
+</body>
+</html>
+
+
+<script>
+function getLength() {
+	var str = document.getElementById("str").value;
+	var length = str.length;
+	document.getElementById("output2").innerHTML = length;
+}
+</script>
+		
+	
+	<label for="str">Введите строку:</label><br>
+	<input type="text" id="str"><br>
+
+	<button onclick="getLength()">Посчитать длину</button><br>
+
+	<p>Длина строки: <span id="output2"></span></p>
+
+
+	<script>
+		
+			function getAverage() {
+			var nums = document.getElementById("nums").value.split(",");
+			var sum = 0;
+			for (var i = 0; i < nums.length; i++) {
+				sum += parseInt(nums[i]);
+			}
+			var average = sum / nums.length;
+			document.getElementById("output3").innerHTML = average;
+		}
+
+	
+
+		
+	</script>
+
+<label for="nums">Введите числа через запятую:</label><br>
+<input type="text" id="nums"><br>
+
+<button onclick="getAverage()">Посчитать среднее</button><br>
+
+<p>Среднее арифметическое: <span id="output3"></span></p>
+
+
+<script>
+		
+	function getAverage2() {
+var output4 = 'Hello world';
+
+	document.getElementById("output4").innerHTML = average;
+}
+
+</script>
